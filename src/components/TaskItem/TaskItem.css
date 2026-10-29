@@ -1,0 +1,17 @@
+/* High-priority tasks appear in red. */
+.priority-high {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+/* Medium-priority tasks appear in orange. */
+.priority-medium {
+  color: #d97706;
+  font-weight: bold;
+}
+
+/* Low-priority tasks appear in green. */
+.priority-low {
+  color: #16a34a;
+  font-weight: bold;
+}

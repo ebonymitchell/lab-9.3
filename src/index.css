@@ -1,0 +1,33 @@
+/* Global font and color settings */
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111827;
+  background-color: #f9fafb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Consistent element sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove default browser spacing */
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+/* Inherit the application's font */
+button,
+select {
+  font: inherit;
+}
+
+/* Keyboard accessibility */
+button:focus-visible,
+select:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 2px;
+}

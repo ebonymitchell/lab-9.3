@@ -1,17 +1,87 @@
-/* High-priority tasks appear in red. */
+/* Individual task card */
+.task-item {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 20px;
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+/* Task card hover effect */
+.task-item:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Task title */
+.task-item h3 {
+    margin: 0 0 8px;
+    color: #111827;
+}
+
+/* Task description */
+.task-description {
+    color: #6b7280;
+}
+
+/* Priority indicators */
 .priority-high {
-  color: #dc2626;
-  font-weight: bold;
+    color: #dc2626;
+    font-weight: 700;
 }
 
-/* Medium-priority tasks appear in orange. */
 .priority-medium {
-  color: #d97706;
-  font-weight: bold;
+    color: #d97706;
+    font-weight: 700;
 }
 
-/* Low-priority tasks appear in green. */
 .priority-low {
-  color: #16a34a;
-  font-weight: bold;
+    color: #15803d;
+    font-weight: 700;
+}
+
+/* Status indicators */
+.status-pending {
+    color: #6b7280;
+    font-weight: 600;
+}
+
+.status-in-progress {
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.status-completed {
+    color: #15803d;
+    font-weight: 600;
+}
+
+/* Status selector */
+.task-item select {
+    padding: 8px;
+    margin: 8px 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background-color: white;
+    color: #111827;
+}
+
+/* Delete button */
+.delete-button {
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 9px 14px;
+    cursor: pointer;
+}
+
+/* Delete button hover effect */
+.delete-button:hover {
+    background-color: #b91c1c;
+}
+
+/* Delete button active state */
+.delete-button:active {
+    transform: scale(0.97);
 }

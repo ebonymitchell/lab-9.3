@@ -1,4 +1,3 @@
-
 // Defines the three statuses a task can have.
 export type TaskStatus = "pending" | "in-progress" | "completed";
 

@@ -1,3 +1,4 @@
+
 // Defines the three statuses a task can have.
 export type TaskStatus = "pending" | "in-progress" | "completed";
 
@@ -28,10 +29,15 @@ export interface TaskItemProps {
     onDelete: (taskId: string) => void;
 }
 
-// Defines the filter options and callback.
+// Defines the selected filters for task status and priority.
+// The question marks mean these properties are optional.
+export interface TaskFilters {
+    status?: TaskStatus;
+    priority?: TaskPriority;
+}
+
+// Defines the callback function TaskFilter receives.
+// Reuses TaskFilters instead of repeating the same properties.
 export interface TaskFilterProps {
-    onFilterChange: (filters: {
-        status?: TaskStatus;
-        priority?: TaskPriority;
-    }) => void;
+    onFilterChange: (filters: TaskFilters) => void;
 }

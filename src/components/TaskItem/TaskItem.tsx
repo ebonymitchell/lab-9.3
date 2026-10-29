@@ -1,4 +1,3 @@
-
 // Import the stylesheet for the TaskItem component.
 import "./TaskItem.css";
 
